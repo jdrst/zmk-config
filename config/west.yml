@@ -9,5 +9,8 @@ manifest:
       remote: zmkfirmware
       revision: main
       import: app/west.yml
+    # - name: ncs-playground
+    #   url: https://github.com/makerdiary/ncs-playground
+    #   revision: b57066890f7f01e8f38c7ac3fdfff798ad63c1cc
   self:
     path: config
