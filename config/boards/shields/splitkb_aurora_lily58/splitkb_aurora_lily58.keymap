@@ -59,8 +59,6 @@
 &kp LSHFT &kp Y  &kp X  &kp C    &kp V    &kp B      &kp LBKT   &kp RBKT &kp N      &kp M    &kp COMMA &kp DOT &kp FSLH &kp RSHFT
                         &kp LALT &kp LGUI &mo LOWER  &kp SPACE  &kp RET  &mo RAISE  &kp BSPC &kp RGUI
             >;
-
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };        
         
         lower_layer {
