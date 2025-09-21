@@ -31,3 +31,8 @@ include:
     shield: splitkb_aurora_lily58_dongle rgbled_adapter
   - board: nrf52840_mdk_usb_dongle 
     shield: settings_reset
+
+  - board: nice_nano_v2
+    shield: splitkb_aurora_sofle_left
+  - board: nice_nano_v2
+    shield: splitkb_aurora_sofle_right
