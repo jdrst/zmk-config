@@ -14,8 +14,8 @@
 
 #define DEFAULT 0
 #define DEFAULT_QWERTZ 1
-#define LOWER 1
-#define RAISE 2
+#define LOWER 2
+#define RAISE 3
 #define ADJUST 4
 
 / { 
