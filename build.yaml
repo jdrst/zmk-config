@@ -19,18 +19,19 @@
 ---
 include:
   - board: nice_nano_v2
+    shield: settings_reset
+  - board: nrf52840_mdk_usb_dongle 
+    shield: settings_reset
+
+  - board: nice_nano_v2
     shield: splitkb_aurora_lily58_left
   - board: nice_nano_v2
     shield: splitkb_aurora_lily58_right
-  - board: nice_nano_v2
-    shield: settings_reset
 
   - board: nice_nano_v2
     shield: splitkb_aurora_lily58_peripheral_left
   - board: nrf52840_mdk_usb_dongle 
     shield: splitkb_aurora_lily58_dongle rgbled_adapter
-  - board: nrf52840_mdk_usb_dongle 
-    shield: settings_reset
 
   - board: nice_nano_v2
     shield: splitkb_aurora_sofle_left
