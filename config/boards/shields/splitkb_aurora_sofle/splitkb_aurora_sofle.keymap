@@ -23,8 +23,8 @@
         mouse_scroll: mouse_scroll {
         	compatible = "zmk,behavior-sensor-rotate";
             tap-ms = <20>;
-        	#sensor-binding-cells = <2>;
-                bindings = <&msc>, <&msc>;
+        	#sensor-binding-cells = <0>;
+                bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
 		};
     };
 
@@ -55,7 +55,7 @@
                    &kp LALT &kp LGUI  &mo LOWER &trans &kp SPACE             &kp RET   &trans    &mo RAISE &kp BSPC   &kp RALT
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &mouse_scroll SCRL_DOWN SCRL_UP>;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &mouse_scroll>;
         };
 
         default_qwertz {
@@ -72,6 +72,8 @@
 &kp LSHFT &kp Y  &kp X    &kp C     &kp V     &kp B  &kp C_MUTE      &mkp MCLK &kp N  &kp M    &kp COMMA &kp DOT &kp FSLH &kp RSHFT
                  &kp LALT &kp LGUI  &mo LOWER &trans &kp SPACE       &kp RET &trans &mo RAISE &kp BSPC   &kp RALT
             >;
+
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &mouse_scroll>;
         };        
 
         lower_layer {
@@ -90,7 +92,7 @@
                         &trans            &trans            &trans       &trans    &trans     &trans    &trans    &trans    &trans    &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &mouse_scroll SCRL_DOWN SCRL_UP>;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &mouse_scroll>;
         };
 
         raise_layer {
@@ -108,7 +110,7 @@
                  &trans &trans  &trans  &trans  &trans     &mkp LCLK &mkp RCLK   &trans    &trans    &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &mouse_scroll SCRL_DOWN SCRL_UP>;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &mouse_scroll>;
         };
 
         adjust_layer {
@@ -127,7 +129,7 @@
                                       &trans  &trans      &trans      &trans &trans       &trans &trans        &trans      &trans          &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &mouse_scroll SCRL_DOWN SCRL_UP>;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &mouse_scroll>;
         };
     };
 };
