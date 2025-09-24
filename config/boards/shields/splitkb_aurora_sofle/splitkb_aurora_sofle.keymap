@@ -55,7 +55,7 @@
                    &kp LALT &kp LGUI  &mo LOWER &trans &kp SPACE             &kp RET   &trans    &mo RAISE &kp BSPC   &kp RALT
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &mouse_scroll>;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN>;
         };
 
         default_qwertz {
@@ -73,7 +73,7 @@
                  &kp LALT &kp LGUI  &mo LOWER &trans &kp SPACE       &kp RET &trans &mo RAISE &kp BSPC   &kp RALT
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &mouse_scroll>;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN>;
         };        
 
         lower_layer {
@@ -92,7 +92,7 @@
                         &trans            &trans            &trans       &trans    &trans     &trans    &trans    &trans    &trans    &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &mouse_scroll>;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN>;
         };
 
         raise_layer {
@@ -110,7 +110,7 @@
                  &trans &trans  &trans  &trans  &trans     &mkp LCLK &mkp RCLK   &trans    &trans    &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &mouse_scroll>;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN>;
         };
 
         adjust_layer {
@@ -129,7 +129,7 @@
                                       &trans  &trans      &trans      &trans &trans     &trans  &trans        &trans      &trans          &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &mouse_scroll>;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN>;
         };
     };
 };
