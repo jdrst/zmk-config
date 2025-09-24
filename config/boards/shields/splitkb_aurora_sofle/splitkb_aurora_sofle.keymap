@@ -23,7 +23,7 @@
         mouse_scroll: mouse_scroll {
         	compatible = "zmk,behavior-sensor-rotate";
             tap-ms = <20>;
-        	#sensor-binding-cells = <0>;
+        	#sensor-binding-cells = <1>;
                 bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
 		};
     };
