@@ -37,3 +37,8 @@ include:
     shield: splitkb_aurora_sofle_left
   - board: nice_nano_v2
     shield: splitkb_aurora_sofle_right
+
+  - board: nice_nano_v2
+    shield: splitkb_aurora_sofle_peripheral_left
+  - board: nrf52840_mdk_usb_dongle 
+    shield: splitkb_aurora_sofle_dongle rgbled_adapter
