@@ -19,12 +19,12 @@
 #define ADJUST 4
 
 / { 
-    behaviours {
+    behaviors {
         mouse_scroll: mouse_scroll {
         	compatible = "zmk,behavior-sensor-rotate";
             tap-ms = <20>;
         	#sensor-binding-cells = <0>;
-                bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
+                bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
 		};
     };
 
@@ -55,7 +55,7 @@
                    &kp LALT &kp LGUI  &mo LOWER &trans &kp SPACE             &kp RET   &trans    &mo RAISE &kp BSPC   &kp RALT
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &mouse_scroll>;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP, &mouse_scroll>;
         };
 
         default_qwertz {
@@ -90,7 +90,7 @@
                         &trans            &trans            &trans       &trans    &trans     &trans    &trans    &trans    &trans    &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &mouse_scroll>;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP, &mouse_scroll>;
         };
 
         raise_layer {
@@ -108,7 +108,7 @@
                  &trans &trans  &trans  &trans  &trans     &mkp LCLK &mkp RCLK   &trans    &trans    &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &mouse_scroll>;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP, &mouse_scroll>;
         };
 
         adjust_layer {
@@ -127,7 +127,7 @@
                                       &trans  &trans      &trans      &trans &trans       &trans &trans        &trans      &trans          &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &mouse_scroll>;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP, &mouse_scroll>;
         };
     };
 };
