@@ -13,18 +13,10 @@
 };
 
 / {
-    chosen {
-        zmk,kscan = &kscan0;
-        zmk,matrix-transform = &default_transform;
-        // zephyr,console = &cdc_acm_uart;
-    };
 
-    kscan0: kscan {
-        compatible = "zmk,kscan-gpio-direct";
-        label = "KSCAN";
-        input-gpios
-        = <&gpio1 6 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
-        ;
+    chosen {
+        zephyr,display = &oled;
+        zmk,physical-layout = &josefadamcik_sofle_layout;
     };
 
     default_transform: keymap_transform_0 {
@@ -67,5 +59,25 @@ RC(3,0) RC(3,1) RC(3,2) RC(3,3) RC(3,4) RC(3,5) RC(4,5) RC(4,6) RC(3,6) RC(3,7) 
         compatible = "zmk,keymap-sensors";
         sensors = <&left_encoder &right_encoder>;
         triggers-per-rotation = <36>;
+    };
+};
+
+&pro_micro_i2c {
+    status = "okay";
+
+    oled: ssd1306@3c {
+        compatible = "solomon,ssd1306fb";
+        reg = <0x3c>;
+        width = <128>;
+        height = <32>;
+        segment-offset = <0>;
+        page-offset = <0>;
+        display-offset = <0>;
+        multiplex-ratio = <31>;
+        segment-remap;
+        com-invdir;
+        com-sequential;
+        inversion-on;
+        prechargep = <0x22>;
     };
 };
