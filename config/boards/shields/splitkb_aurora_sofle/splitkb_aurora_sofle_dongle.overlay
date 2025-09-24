@@ -14,6 +14,15 @@
 // };
 
 / {
+    behaviors {
+        mouse_scroll: mouse_scroll {
+        	compatible = "zmk,behavior-sensor-rotate";
+            tap-ms = <20>;
+        	#sensor-binding-cells = <0>;
+                bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
+		};
+    };
+
     chosen {
         zmk,kscan = &kscan0;
         zmk,matrix-transform = &default_transform;
