@@ -32,6 +32,8 @@ include:
     shield: splitkb_aurora_lily58_peripheral_left
   - board: nrf52840_mdk_usb_dongle 
     shield: splitkb_aurora_lily58_dongle rgbled_adapter
+  - board: seeeduino_xiao_ble 
+    shield: splitkb_aurora_lily58_dongle rgbled_adapter
 
   - board: nice_nano_v2
     shield: splitkb_aurora_sofle_left
