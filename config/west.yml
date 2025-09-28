@@ -4,10 +4,8 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: caksoylar
       url-base: https://github.com/caksoylar
-    # - name: m165437
-    #   url-base: https://github.com/M165437
-    - name: mctechnology17
-      url-base: https://github.com/mctechnology17
+    - name: infely
+      url-base: https://github.com/infely
     # Additional modules containing boards/shields/custom code can be listed here as well
     # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
   projects:
@@ -18,12 +16,9 @@ manifest:
     - name: zmk-rgbled-widget
       remote: caksoylar
       revision: main
-    # - name: nice-view-gem 
-    #   remote: m165437 
-    #   revision: main
-    - name: zmk-nice-oled
-      remote: mctechnology17
-      revision: main
+    - name: nice-view-battery                  
+      remote: infely                           
+      revision: main                                
     # - name: ncs-playground
     #   url: https://github.com/makerdiary/ncs-playground
     #   revision: b57066890f7f01e8f38c7ac3fdfff798ad63c1cc
