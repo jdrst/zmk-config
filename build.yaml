@@ -18,31 +18,31 @@
 #
 ---
 include:
-  - board: nice_nano_v2
+  - board: nice_nano@2.0.0
     shield: settings_reset
   - board: nrf52840_mdk_usb_dongle 
     shield: settings_reset
-  - board: seeeduino_xiao_ble 
+  - board: xiao_ble 
     shield: settings_reset
 
-  - board: nice_nano_v2
+  - board: nice_nano@2.0.0
     shield: splitkb_aurora_lily58_left
-  - board: nice_nano_v2
+  - board: nice_nano@2.0.0
     shield: splitkb_aurora_lily58_right
 
-  - board: nice_nano_v2
+  - board: nice_nano@2.0.0
     shield: splitkb_aurora_lily58_peripheral_left
   - board: nrf52840_mdk_usb_dongle 
     shield: splitkb_aurora_lily58_dongle rgbled_adapter
-  - board: seeeduino_xiao_ble 
+  - board: xiao_ble 
     shield: splitkb_aurora_lily58_dongle rgbled_adapter
 
-  - board: nice_nano_v2
-    shield: splitkb_aurora_sofle_left nice_view_adapter nice_view_battery
-  - board: nice_nano_v2
-    shield: splitkb_aurora_sofle_right nice_view_adapter nice_view_battery
+  - board: nice_nano@2.0.0
+    shield: splitkb_aurora_sofle_left nice_view_adapter nice_view # nice_view_battery
+  - board: nice_nano@2.0.0
+    shield: splitkb_aurora_sofle_right nice_view_adapter nice_view # nice_view_battery
 
-  - board: nice_nano_v2
-    shield: splitkb_aurora_sofle_peripheral_left nice_view_adapter nice_view_battery
+  - board: nice_nano@2.0.0
+    shield: splitkb_aurora_sofle_peripheral_left nice_view_adapter nice_view # nice_view_battery
   - board: nrf52840_mdk_usb_dongle 
     shield: splitkb_aurora_sofle_dongle rgbled_adapter 
